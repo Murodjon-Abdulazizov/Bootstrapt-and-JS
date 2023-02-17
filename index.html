@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-center bg-secondary text-white">
+            <h4>Add task</h4>
+          </div>
+          <div class="card-body">
+            
+            <form name="myForm">
+              <label for="textarea" class="form-label">Taskni nomini kiriting</label>
+              <textarea class="form-control mb-3" name="textarea" id="textarea" cols="30" rows="2"></textarea>
+              
+              <label for="startDate" class="form-label">Boshlanish vaqti</label>
+              <input type="date" id="startDate" class="form-control mb-3">
+              
+              <label for="endDate" class="form-label">Boshlanish vaqti</label>
+              <input type="date" id="endDate" class="form-control mb-3">
+              
+              <label for="name" class="form-label">Tanlang</label>
+              <select name="name" id="name" class="form-select mb-3 select_name">
+                <option value="" selected disabled>Tanlang</option>
+                <option value="Nizom">Nizom</option>
+                <option value="Doston">Doston</option>
+                <option value="Ali">Ali</option>
+              </select>
+              
+              <label for="time" class="form-label">Tanlang</label>
+              <select name="time" id="time" class="form-select select_time">
+                <option value="" selected disabled>Tanlang</option>
+                <option value="Pending">Pending</option>
+                <option value="doing">Doing</option>
+              </select>
+              
+              <div class="d-grid mt-3">
+                <button type="button" class="btn btn-secondary add_task">Add task</button>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-center bg-primary text-white">
+            <h4>Pending task</h4>
+          </div>
+          
+          <div class="card-body body-pending"></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-center bg-info text-white">
+            <h4>Doing task</h4>
+          </div>
+          
+          <div class="card-body body-doing"></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-center bg-success text-white">
+            <h4>Done task</h4>
+          </div>
+          
+          <div class="card-body body-done"></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-center bg-warning text-white">
+            <h4>Rejected task</h4>
+          </div>
+          
+          <div class="card-body body-rejected"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
